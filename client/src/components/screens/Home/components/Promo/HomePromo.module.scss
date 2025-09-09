@@ -1,0 +1,46 @@
+.root {
+  margin-top: 2rem;
+  padding: 23px 23px 28px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: animateBg 12s linear infinite;
+  background-image: linear-gradient(90deg, #000000e5, #8837a5, #000000e5, #8837a5);
+  background-size: 300% 100%;
+  color: #ffffff;
+  border-radius: 15px;
+
+  @keyframes animateBg {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+  .text {
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+
+  .signupButton {
+    margin-top: 1.7rem;
+    padding: 11px 50px;
+    color: #ffffff;
+    border: 1px solid #f4f4f46b;
+    border-radius: 10px;
+    font-size: 19px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-top: 1.2rem;
+
+    .signupButton {
+      font-size: 17px;
+    }
+  }
+}

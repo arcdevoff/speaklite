@@ -1,0 +1,31 @@
+.root {
+  text-align: center;
+
+  .text {
+    margin: 1rem auto 0 auto;
+    font-size: 18px;
+
+    div {
+      background-color: #ffffff;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      line-height: 31px;
+      cursor: pointer;
+
+      .bold {
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      span {
+        display: block;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

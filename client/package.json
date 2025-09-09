@@ -1,0 +1,30 @@
+{
+  "name": "speaklite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.4",
+    "@tabler/icons-react": "^3.3.0",
+    "@tanstack/react-query": "^5.36.0",
+    "axios": "^1.6.8",
+    "formik": "^2.4.6",
+    "luxon": "^3.4.4",
+    "next": "14.2.3",
+    "next-nprogress-bar": "^2.3.12",
+    "react": "^18",
+    "react-content-loader": "^7.0.0",
+    "react-dom": "^18",
+    "react-redux": "^9.1.2",
+    "sass": "^1.77.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}

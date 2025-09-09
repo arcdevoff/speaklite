@@ -1,0 +1,77 @@
+.root {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  gap: 90px;
+  align-items: center;
+
+  .logo {
+    font-size: 29px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu,
+  .mobMenu {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #000000;
+      font-size: 17px;
+
+      &.active {
+        color: #973db7;
+      }
+    }
+  }
+
+  .showMobMenuButton,
+  .mobMenu {
+    display: none;
+  }
+
+  @media (max-width: 1199.98px) {
+    gap: 45px;
+  }
+
+  @media (max-width: 991.98px) {
+    grid-template-columns: 1fr 1fr;
+
+    .showMobMenuButton {
+      display: block;
+    }
+
+    .showMobMenuButton {
+      padding-left: 0;
+      margin: 2px 5px 0 0;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .mobMenu {
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      top: 0;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.16);
+      z-index: 1000000;
+      height: 100%;
+      justify-content: flex-start;
+      left: 0;
+      padding: 35px;
+
+      a {
+        margin-bottom: 0.7rem;
+      }
+    }
+
+    .logo {
+      font-size: 25px;
+    }
+  }
+}

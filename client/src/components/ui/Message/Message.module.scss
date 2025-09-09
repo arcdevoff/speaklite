@@ -1,0 +1,41 @@
+.root {
+  cursor: pointer;
+  z-index: 1000000000;
+  position: fixed;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.16);
+  right: 2rem;
+  top: 0.8rem;
+  padding: 11px;
+  font-size: 16px;
+  display: flex;
+
+  @media (max-width: 991.98px) {
+    right: 0.5rem;
+  }
+
+  .success,
+  .error {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .success {
+    svg {
+      color: #30b03d;
+    }
+  }
+
+  .error {
+    svg {
+      color: #f0303d;
+    }
+  }
+}

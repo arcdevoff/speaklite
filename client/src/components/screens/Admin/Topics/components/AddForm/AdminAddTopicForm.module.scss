@@ -1,0 +1,50 @@
+.root {
+  border: 1px solid #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    textarea,
+    input {
+      margin-bottom: 0.7rem;
+    }
+
+    input[type='file'] {
+      margin: 0.8rem 0 0 2px;
+    }
+
+    button[type='submit'] {
+      margin-top: 2rem;
+      height: 48px;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 40%;
+      height: 40%;
+      margin: 1.2rem auto 0 auto;
+      border-radius: 5px;
+    }
+
+    .uploadImageButton {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+
+      .text {
+        display: block;
+        font-size: 17.4px;
+        margin-top: 11px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

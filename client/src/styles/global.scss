@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+
+  .container {
+    padding: 0 15px;
+    min-height: calc(90vh - 100px);
+    overflow-x: hidden;
+    position: relative;
+
+    @media (min-width: 575.98px) {
+      padding: 0 calc(50% - 270px);
+    }
+
+    @media (min-width: 767.98px) {
+      padding: 0 calc(50% - 360px);
+    }
+
+    @media (min-width: 991.98px) {
+      padding: 0 calc(50% - 480px);
+    }
+
+    @media (min-width: 1199.98px) {
+      padding: 0 calc(50% - 590px);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #973db7;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      opacity: 0.5;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 0 16px;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: #b7b7b769;
+    border-radius: 8px;
+    color: #353c41;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: #973db7;
+      outline-width: 0;
+    }
+  }
+
+  input[type='file'] {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+  }
+
+  select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-chevron-down'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M6 9l6 6l6 -6' /%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 1.25em auto, 100%;
+  }
+
+  textarea {
+    padding-top: 10px;
+    height: auto;
+    font-family: sans-serif;
+  }
+
+  .floatingInput {
+    position: relative;
+    display: grid;
+
+    input {
+      height: 55px;
+      padding-top: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      padding-top: 24px;
+      height: 100px;
+    }
+
+    select {
+      height: 55px;
+      padding-top: 17px;
+      padding-left: 15px;
+    }
+
+    label {
+      position: absolute;
+      left: 16px;
+      font-size: 14px;
+      top: 6px;
+    }
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .btn-primary {
+    background-color: #973db7;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+  }
+}

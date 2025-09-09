@@ -1,0 +1,36 @@
+.root {
+  margin-top: 6rem;
+  color: #1d1d1d;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  align-items: center;
+  grid-gap: 10px;
+  gap: 10px;
+  border-top: 1px solid #d5d5d5;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  @media (max-width: 450px) {
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: 575.98px) {
+    padding: 18px calc(50% - 270px);
+  }
+
+  @media (min-width: 767.98px) {
+    padding: 18px calc(50% - 360px);
+  }
+
+  @media (min-width: 991.98px) {
+    padding: 18px calc(50% - 480px);
+  }
+
+  @media (min-width: 1199.98px) {
+    padding: 18px calc(50% - 590px);
+  }
+}

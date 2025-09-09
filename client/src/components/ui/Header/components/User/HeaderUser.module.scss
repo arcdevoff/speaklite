@@ -1,0 +1,108 @@
+.root {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #973db7;
+    border: 1px solid #973db7;
+    padding: 8px;
+    width: 115px;
+    border-radius: 12px;
+  }
+
+  .profile {
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 4rem;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.16);
+    border: 1px solid #d5d5d5;
+    text-align: left;
+
+    .info {
+      padding: 10px;
+      border-radius: 7px;
+      background-color: #f4f4f4;
+
+      .name,
+      .email {
+        display: block;
+      }
+
+      .name {
+        font-size: 19px;
+        font-weight: 500;
+      }
+
+      .email {
+        color: #272727;
+      }
+    }
+
+    .subscription {
+      padding: 10px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      &.active {
+        background-color: rgb(185 255 197 / 28%);
+        color: rgba(52, 141, 68, 0.836);
+        margin-bottom: 20px;
+      }
+
+      &.notactive {
+        background-color: rgb(255 223 223 / 55%);
+        color: #ff6e6e;
+        margin-bottom: 11px;
+      }
+
+      .status {
+        margin-left: 5px;
+      }
+    }
+
+    .subscribe {
+      margin-bottom: 20px;
+      button {
+        height: 38px;
+        width: 100%;
+        border-radius: 7px;
+      }
+    }
+
+    .logout {
+      border-top: 1px solid #f4f4f4;
+      padding-top: 20px;
+
+      button {
+        height: 38px;
+        color: #000000;
+        border: 1px solid rgb(0 0 0 / 11%);
+        background-color: #adadad00;
+        width: 100%;
+        border-radius: 7px;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    button {
+      padding: 7px 8px;
+      width: 105px;
+    }
+  }
+
+  @media (max-width: 365px) {
+    button {
+      width: 93px;
+    }
+  }
+}

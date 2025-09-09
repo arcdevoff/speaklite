@@ -1,0 +1,16 @@
+.root {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 0.7rem;
+    }
+
+    button[type='submit'] {
+      margin-top: 2rem;
+      height: 48px;
+      border-radius: 10px;
+    }
+  }
+}
